@@ -1,0 +1,19 @@
+#Relatorio Final:
+#1- Criar dataset c/ 5 col numerica e 3 col categoria
+#2- Usar funções de criação e de distribuição (pelo menos duas)
+#3- Gravas no disco e enviar
+tab1 = read.table("tabela02.txt", sep="|", header = TRUE)
+#Custo diario internação = 250,00
+Dias.Inter= (as.Date(Sys.Date())-as.Date(tab1[,3]))
+DataSet1 <- data.frame(id = 1:11, tab1, Idade=round(rnorm(n=11, sd=15, mean=40)), 
+                      Temperatura=round(rnorm(11, 37.0, 0.65),digits = 1),
+                      Cust.Medicar=round(rnorm(11, 1200.00, 250.00),digits = 2),
+                      Dias.Inter)
+Cust.Total = round(DataSet1[,7]+250.00*as.numeric(DataSet1[,8]),digits = 2)
+DataSet2 = data.frame(DataSet1, Cust.Total)
+DataSet2
+lapply(DataSet2[9], sum)
+round (sapply(DataSet2[5:9], mean), 2)
+plot (DataSet2$Cust.Total, DataSet2$Dias.Inter, main = "Gráfico de Dispersão", xlab = "Custo Total (R$)", ylab = "Tempo de Internação (dias)")
+hist (DataSet2$Cust.Total, main = "Histograma de Frequencia", col=2, border=1, xlab= "Custo Total", ylab="Frequencia")
+split(DataSet2, DataSet2$Plano.Sau)
