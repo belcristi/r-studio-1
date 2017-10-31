@@ -1,0 +1,12 @@
+Paciente | Plano-Sau | Dt-Entrada  
+João     | SUS       | 2017-10-18 
+Maria    | Unimed    | 2017-10-01 
+Tiago    | Bradesco  | 2017-10-24 
+Julia    | Particular| 2017-10-27 
+Fernanda | SUS       | 2017-09-20 
+Andre    | Unimed    | 2017-10-04 
+Pedro    | Vale      | 2017-10-13 
+Paula    | SUS       | 2017-10-25 
+Jose     | Particular| 2017-10-24 
+Carlos   | Petrobras | 2017-09-15 
+Camila   | Bradesco  | 2017-06-22 
