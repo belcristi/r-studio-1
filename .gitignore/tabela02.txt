@@ -1,5 +1,5 @@
 Paciente | Plano-Sau | Dt-Entrada  
-Jo√£o     | SUS       | 2017-10-18 
+Jo„o     | SUS       | 2017-10-18 
 Maria    | Unimed    | 2017-10-01 
 Tiago    | Bradesco  | 2017-10-24 
 Julia    | Particular| 2017-10-27 
