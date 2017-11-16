@@ -1,0 +1,10 @@
+D <- read.csv("myDataset.csv", sep = ",", header = TRUE)D#Estatísticas descritivassummary(D)
+#Medidas de despersãovar(D$x)var(D$y)var(D$w)var(D$m)var(D$n)var(D$o)sd(D$x)sd(D$y)sd(D$w)sd(D$m)sd(D$n)sd(D$o)
+hist(D$x, ylab = "Frequencia",  main = "Histograma x")boxplot(D$x, ylab = "Dados x")boxplot(D$x~D$mes, main="x", ylab="Valor", xlab="Mês")
+hist(D$y, ylab = "Frequencia",  main = "Histograma y")boxplot(D$y, ylab = "Dados y")boxplot(D$y~D$mes, main="y", ylab="Valor", xlab="Mês")
+hist(D$w, ylab = "Frequencia",  main = "Histograma w")boxplot(D$w, ylab = "Dados w")boxplot(D$w~D$mes, main="w", ylab="Valor", xlab="Mês")
+hist(D$m, ylab = "Frequencia",  main = "daHistograma m")boxplot(D$m, ylab = "Dados m")boxplot(D$m~D$mes, main="m", ylab="Valor", xlab="Mês")
+hist(D$n, ylab = "Frequencia",  main = "Histograma n")boxplot(D$n, ylab = "Dados n")boxplot(D$n~D$mes, main="n", ylab="Valor", xlab="Mês")
+hist(D$o, ylab = "Frequencia",  main = "Histograma o")boxplot(D$o, ylab = "Dados o")boxplot(D$o~D$mes, main="o", ylab="Valor", xlab="Mês")
+freq <- table(D$z)freq#Não fazer grafico de barras, todos os meses tem a mesma frequencia
+with(D, plot(w, x))title (main="Gráfico de Dispersão")
